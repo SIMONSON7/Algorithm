@@ -17,6 +17,17 @@
 
 #define MAX_CNT 100
 
+void sort()
+{
+
+}
+
+bool binarySearch(int _val)
+{
+
+	return false;
+}
+
 int main(int argc, char * argv[])
 {
 	int n, m, v[MAX_CNT];
@@ -28,19 +39,18 @@ int main(int argc, char * argv[])
 		scanf_s("%d", &v[i]);
 	}
 
+	sort();
+
 	for (int i = 0; i < n; ++i)
 	{
 		for (int j = 0; j < n; ++j)
 		{
 			for (int k = 0; k < n; ++k)
 			{
-				for (int p = 0; p < n; ++p)
+				if (binarySearch(m - (v[i] + v[j] + v[k])))
 				{
-					if (v[i] + v[j] + v[k] + v[p] == m)
-					{
-						res = true;
-						break;
-					}
+					res = true;
+					break;
 				}
 			}
 		}
