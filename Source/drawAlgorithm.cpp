@@ -28,6 +28,7 @@ bool binarySearch(int _val)
 	return false;
 }
 
+#if 0
 int main(int argc, char * argv[])
 {
 	int n, m, v[MAX_CNT];
@@ -58,3 +59,4 @@ int main(int argc, char * argv[])
 
 	return 0;
 }
+#endif
